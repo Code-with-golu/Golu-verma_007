@@ -6,8 +6,11 @@
     --accent-2: #8000ff;
     --soft-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
 }
-.fade-up{
-padding:  16px;
+
+
+
+.fade-up {
+    padding: 16px;
 }
 
 * {
@@ -244,7 +247,7 @@ nav a {
     background: linear-gradient(135deg, #6a00ff, #00e5ff);
     display: grid;
     place-items: center;
-    border: x solid rgba(255, 255, 255, 0.8);
+    border: x solid rgba(211, 114, 114, 0.8);
     box-shadow: 0 18px 38px rgba(107, 33, 240, 0.12);
 }
 
@@ -791,17 +794,18 @@ header {
 
 .contact-form {
     background: linear-gradient(135deg, #8e2de2 20%, #0ff0fc 100%, #ff4ecd 10%);
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    margin-left: 180px;
-    margin-top: 555px;
+    max-width: 600px;
+    margin-left: 150px;
+    margin-top: 135%;
     gap: 4px;
     padding: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
         0 0 40px rgba(232, 76, 214, 0.4);
 }
+
 
 .contact-form input,
 .contact-form textarea {
@@ -821,7 +825,7 @@ header {
 .contact-form textarea:focus {
     border: 1px solid #00aaff;
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.8),
-                0 0 20px rgba(232, 76, 214, 0.5);
+        0 0 20px rgba(232, 76, 214, 0.5);
 }
 
 .contact-form textarea {
@@ -830,8 +834,8 @@ header {
 }
 
 .contact-form button {
-    background: #3498db;
-    color: #fff;
+    background:  linear-gradient(90deg, #00f0ff, #ff00ff) ;
+    color:white;
     border: none;
     padding: 10px;
     border-radius: 12px;
@@ -839,6 +843,25 @@ header {
     cursor: pointer;
     margin-top: 5px;
 }
+.send-btn {
+  background: linear-gradient(45deg, #06b6d4, #9333ea);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+.send-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #9333ea, 0 0 30px #06b6d4;
+}
+
 
 .fade-in {
     opacity: 0;
@@ -849,4 +872,12 @@ header {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.glow-divider {
+    height: 4px;
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    box-shadow: 0 0 20px #00f0ff;
+    border-radius: 2px;
+    margin: 40px 0;
 }
