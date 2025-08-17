@@ -11,7 +11,7 @@ form.addEventListener('submit', async function (e) {
 
   // Animated sending text
   let dots = 0;
-  status.textContent = "📤 Sending";
+  status.textContent = "💬 Sending";
   status.style.color = "#00eaff";
   const loadingInterval = setInterval(() => {
     dots = (dots + 1) % 4; // cycle between 0-3 dots
@@ -43,11 +43,8 @@ form.addEventListener('submit', async function (e) {
   }
 });
 
-document.querySelector(".hire-btn").addEventListener("click", function () {
-  document.querySelector("#contactForm").scrollIntoView({
-    behavior: "smooth"
-  });
-});
+
+
 
 
 
