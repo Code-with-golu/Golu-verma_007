@@ -70,7 +70,18 @@
           <h4>I'am Golu, a passionate front-end developer crafting responsive, user-friendly websites with clean, modern
             design.</h4>
           <div class="controls">
-            <button class="contact-btn"><i class="fas fa-paper-plane"></i> Let's Work Together</button>
+            <button class="contact-btn" id="scrollBtn">
+  <i class="fas fa-paper-plane"></i> Let's Work Together
+</button>
+
+<script>
+  document.getElementById("scrollBtn").addEventListener("click", function () {
+    window.scrollBy({
+      top: 600, // change this number to how much you want to scroll down
+      behavior: "smooth"
+    });
+  });
+</script>
           </div>
 
           <div class="socials" aria-hidden>
@@ -193,3 +204,4 @@
 </html>
 <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
+
