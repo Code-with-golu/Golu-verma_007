@@ -771,15 +771,14 @@ header {
     overflow: hidden;
 }
 
-@media (max-width: 480px){
-    .contact-btn{
-        padding: 10px 28px;
-     font-weight: bold;
-        font-size: 10px;
+@media (max-width: 480px) {
+    .controls {
+        display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; /* centers everything inside */
+        margin-left: 0;          /* reset the wrong offset */
     }
-    
+
 }
 
 /* Moving Shine Effect */
